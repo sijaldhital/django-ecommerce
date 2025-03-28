@@ -58,7 +58,13 @@
                         <a href="{% url 'checkout' %}" class="btn btn-outline-secondary">Update Shipping</a>
                     </div>
                 </div>
-                <br>
+                <br><br>
+
+                <center>
+                    {{ paypal_form.render }}
+                </center>
+
+                <br><br>
                 <div class="card">
                     <div class="card-header">
                         Billing Info
