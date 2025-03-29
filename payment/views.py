@@ -216,7 +216,7 @@ def billing_info(request):
           paypal_dict = {
               'business': settings.PAYPAL_RECEIVER_EMAIL,
               'amount': totals,
-              'item_name': 'Book Order',
+              'item_name': 'Tech Order',
               'no_shipping': '2',
               'invoice': str(uuid.uuid4()),
               'currency_code': 'USD',
@@ -244,10 +244,6 @@ def billing_info(request):
         messages.error(request, ("Access Denied!"))
         return redirect('home')
         
-
-
-
-
 
 
 def checkout(request):
