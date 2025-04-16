@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-swm@j4+*amqp@sk0e5lod)4&!*s(=v+6@-w%94r1ca(uk(s(-9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://sijald.com.np','sijald.com.np','django-ecommerce-production-03a5.up.railway.app','htpps://django-ecommerce-production-03a5.up.railway.app']
+ALLOWED_HOSTS = ['https://sijald.com.np','sijald.com.np','django-ecommerce-production-03a5.up.railway.app','htpps://django-ecommerce-production-03a5.up.railway.app',]
 CSRF_TRUSTED_ORIGINS = ['https://sijald.com.np','https://django-ecommerce-production-03a5.up.railway.app']
 
 

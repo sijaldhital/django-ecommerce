@@ -47,6 +47,9 @@ class Order(models.Model):
      date_ordered = models.DateTimeField(auto_now_add=True)
      shipped = models.BooleanField(default=False)
      date_shipped = models.DateTimeField(blank=True, null=True)
+     # Paypal Invoice and Paid T/F
+     invoice = models.CharField(max_length=250, blank=True)
+     paid = models.BooleanField(default=False)
 
      def __str__(self):
          return f'Order - {str(self.id)}'
@@ -61,9 +64,6 @@ def set_shipped_date_on_update(sender, instance, **kwargs):
             instance.date_shipped = now
 
 
-
-     
-        
 
 # Create Order Item Model
 class OrderItem(models.Model):
